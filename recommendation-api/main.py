@@ -44,7 +44,7 @@ def load_models():
     
     # Load models and data
     logger.info("Loading BERT model...")
-    model = SentenceTransformer('all-MiniLM-L6-v2')
+    model = SentenceTransformer('all-mpnet-base-v2')
     
     logger.info("Loading embeddings and data...")
     embeddings = np.load(model_files['embeddings'])
